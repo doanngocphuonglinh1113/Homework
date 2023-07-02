@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            outline: 0;
+        }
+        .container{
+            width: 400px;
+            overflow-x: hidden;
+        }
+        article {
+            overflow: hidden;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        article .content {
+            margin-top: 15px;
+            display: flex;
+        }
+        article .content .thumbnail{
+
+            width: 40%;
+        }
+        article .content .thumbnail img{
+            width: 100%;
+            height: auto;
+        }
+        article .content .description{
+            width: 60%;
+            padding-left: 15px;
+        }
+        article:first-child .thumbnail {
+            margin-bottom: -5px;
+        }
+        article:first-child .thumbnail img{
+            width: 100%;
+            height: auto;
+        }
+        article:first-child .title{
+            background-color: #f80;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+            <div class="thumbnail">
+                <img src="https://i1-sohoa.vnecdn.net/2014/09/24/IMG-1773-1411122931-660x0-7399-1411544450.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=LzF5nd2wWPTnq6xF807IYA" alt="">
+            </div>
+            <h3 class="title">8 thế hệ Iphone độ camera</h3>
+        </article>
+        <article>
+            <h3 class="title">Dell Venue 8 có giá chính hãng 5,5 triệu đồng</h3>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="https://vtv1.mediacdn.vn/zoom/640_400/2016/new-dell-venue-8-pro-4-1453186034425-crop-1453186047048.jpg" alt="">
+                </div>
+                <div class="description">
+                 Sản phẩm của Dell là một trong những mẫu tablet màn hình 8 inch có kết nối 3G giá rẻ nhất trên thị trường hiện nay.
+                </div>
+            </div>
+        </article>
+        <article>
+            <h3 class="title">Samdung ngừng bán máy tính xách tay tại châu Âu</h3>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdRsGwMqS-a1VVzUUAtnSfgstI73JfJHnz7g&usqp=CAU" alt="">
+                </div>
+                <div class="description">
+                    Sau Sony, Samsung cũng đã có những động thái cho thấy muốn rời bỏ khỏi thị trường máy tính xách tay vào giai đoạn thoái trào.
+                </div>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
