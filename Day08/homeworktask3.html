@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li class="child_one">Child 1</li>
+        <li class="child_two">
+            <img id="image"
+             src="images/photo.png" alt="photo" />
+               
+        </li>
+        <li class="child_three"><a href="link3">Child 3</a></li>
+    </ul>
+    <script>
+        let c1 = document.getElementsByClassName('child_one');
+        let c2= document.getElementById('image');
+        let src= c2.src;
+        let alt= c2.alt;
+
+        
+        console.log(c1);
+        console.log("src: ", src);
+        console.log("alt: ", alt);   
+
+        c2.src='https://img.meta.com.vn/Data/image/2021/09/29/anh-binh-minh-1.jpg';
+        c2.alt='hinhanh';
+        let img1=document.getElementById('image');
+
+        let src1= img1.src;
+        let alt1=img1.alt;
+        console.log("src: ",src1);
+        console.log("alt: ",alt1);
+
+
+        
+
+        
+       
+    </script>
+</body>
+</html>

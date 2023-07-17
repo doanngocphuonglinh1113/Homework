@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tenFunction(){
+            //tập hợp lệnh được thực thi
+            // Khi hàm (function)đc gọi
+            console.log('1');
+            console.log('2');
+            console.log('3');
+        }
+        // cách gọi hàm
+        tenFunction();  
+        // 3. cách dặt tên function= đtặ tên biến = camel Case
+        // 4. hàm có tham số(parameter)
+        // param name ==> ddc goi la tham so
+        function helloName(){
+            console.log(`hello ${name}`);
+        //truyen doi tuong vao ham
+        //Các gtri mà truyền vào khi gọi hàm thì gọi đó là: đối số
+        }
+        let myName = 'Trang';
+        helloName('Linh');// dua truc tiep vao
+        helloName(myName);//co the dua bien vao
+        helloName('Trang');
+        //hàm có nhiều tham số, mỗi tham số cách nhau bằng dấu phẩy
+        function helloNameV2(name, age){
+            console.log(` Tôi là ${name}, tôi ${age} tuổi `);
+
+        }
+        helloNameV2('Linh', 20);
+        //tham số vô hạn
+        //cú pháp mới Er
+        function log(...arr){
+            console.log(arr);
+        }
+        log(2,3,4,5,6,7,8)
+        //hàm có trả về, với câu lệnh return
+        function sum(a,b){
+            let sum = a + b;
+            console.log('<<=== 🚀  ===>>',sum);
+            return sum;// trả về giá trị
+        }
+        //nhận kết quả từ hàm sum
+        let result = sum(5,3);
+       console.log('<<=== 🚀  ===>>',result);
+
+       let x = 8;
+       let y =4
+       console.log(x + y);
+
+       let a = 3;
+       let b= 7
+       console.log(a + b);
+
+       let i = 3;
+       let j = 7;
+       console.log(i + j);
+       //cu phap truyen thong
+       function total(e, f){
+        return e +f
+       }
+       //ES6: arrow function short hand
+       // total la 1 ham
+       let totalArrow =(e, f)=> e +f;
+       let res = totalArrow(1,2);
+       console.log('<<=== 🚀  ===>>',res);
+
+
+    </script>
+</body>
+</html>

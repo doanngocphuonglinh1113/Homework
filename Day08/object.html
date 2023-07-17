@@ -1,0 +1,41 @@
+<!-- <script>
+    // đối tượng(Object) == Lab
+    đặc điểm của 1 Lab
+    1. co bàn
+    2. tivi
+    3. quạt
+    4. học viên
+    
+</script>
+ -->
+ <script>
+    let objectStudent = function(name, age, email,mobile, gender){
+        this.name = name;
+        this.age = age;
+        this.email = email;
+        this. mobile = mobile;
+        this.gender = gender;
+    }
+    let studentLinh = new objectStudent('Linh',20,'linhd4251@gmial.com','0932437958','nu')
+    console.log('<<=== 🚀  ===>>',studentLinh);
+    //kl: tat ca cac doi tuong deu tuan theo 1 quy chuan thong thuong
+    
+    // cach 2:
+    //khai boa object tu do hon, khong tuan theo quy tac
+    let studentLinhV2 ={name: 'Linh',age: 20, email:'linhd4251@gmail.com'}
+    console.log(studentLinhV2);
+    // truy cap den phan tu trong object
+    console.log(studentLinh.name);
+    console.log(studentLinhV2.name);
+    console.log(studentLinhV2['age']);
+    let textEmail = 'email';
+    console.log(studentLinhV2[textEmail]);
+    // them 1 phan tu object
+    studentLinhV2.email = 'linhd4251@gmail.com';
+    //ES6
+
+    studentLinhV2 = {...studentLinhV2,gender: 'nu'};
+    console.log(studentLinhV2);
+
+
+ </script>
